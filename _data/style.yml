@@ -1,8 +1,9 @@
 #Color Customization
-highlight: "#716085"
+primary: "#716085"
+primary-light": "#b4b6ff"
 white: "#fcfcfc"
 black: "#262636"
 
 #Image Customization
-header-image: "../img/header-bg.jpg"
+header-image: "../img/header-bg.png"
 contact-image: "../img/map-image.png"

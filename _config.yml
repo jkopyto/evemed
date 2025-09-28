@@ -20,8 +20,8 @@ email      : poradnia@evemed.pl #this is also the email contact forms will go to
 description: "EVEMED - Niepubliczna Poradnia Psychologiczno - Pedagogiczna"
 author     : EVEMED
 # logo:     #optional, defaults to site title
-  # path: assets\img\clients\creative-market.jpg
-  # height: 60 #height in px, defaults to 52px
+  # path: assets\img\logo.png
+  # height: 120 #height in px, defaults to 52px
 
 locale: "pl-PL" # See available languages in _data/sitetext.yml
 
