@@ -7,9 +7,30 @@
 # How to use:
 # {{ site.data.navigation[site.locale].nav.<var_name> | default: 'text' }}
 
-# English (default)
+# Polish (default)
 # -----------------
-en: &DEFAULT_EN
+pl: &DEFAULT_PL
+  nav:
+    - title: "Usługi"
+      section: services
+    - title: "Portfolio"
+      section: portfolio
+    - title: "O nas"
+      section: about
+    - title: "Timeline"
+      section: timeline
+    - title: "Zespół"
+      section: team
+    - title: "Kontakt"
+      section: contact
+    # - title: "Theme Source"
+    #   url: https://github.com/raviriley/agency-jekyll-theme/
+pl-PL:
+  <<: *DEFAULT_PL
+
+# English
+# -------
+es: &DEFAULT_EN
   nav:
     - title: "Services"
       section: services
@@ -23,8 +44,8 @@ en: &DEFAULT_EN
       section: team
     - title: "Contact"
       section: contact
-    - title: "Theme Source"
-      url: https://github.com/raviriley/agency-jekyll-theme/
+    # - title: "Theme Source"
+    #   url: https://github.com/raviriley/agency-jekyll-theme/
 en-US:
   <<: *DEFAULT_EN
 en-CA:
@@ -33,26 +54,3 @@ en-GB:
   <<: *DEFAULT_EN
 en-AU:
   <<: *DEFAULT_EN
-
-# Spanish
-# -------
-es: &DEFAULT_ES
-  nav:
-    - title: "Servicios"
-      section: servicios
-    - title: "Portafolio"
-      section: portafolio
-    - title: "Sobre Nosotros"
-      section: nosotros
-    - title: "Cronología"
-      section: cronologia
-    - title: "Equipo"
-      section: equipo
-    - title: "Contáctenos"
-      section: contacto
-    - title: "Fuente de la plantilla"
-      url: https://github.com/raviriley/agency-jekyll-theme/
-es-ES:
-  <<: *DEFAULT_ES
-es-CO:
-  <<: *DEFAULT_ES
