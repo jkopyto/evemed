@@ -24,6 +24,7 @@ pl: &DEFAULT_PL
       - title: "Diagnoza i opinie"
         desc: "Umożliwia rozpoznanie źródeł trudności i lepsze zrozumienie indywidualnych potrzeb. Podstawa skutecznego wsparcia i rozwoju"
         icon: fas fa-clipboard-list # https://fontawesome.com/icons
+        url: "uslugi/diagnoza-i-opinie"
       - title: "Terapia i wsparcie dorosłych"
         desc: "Tworzymy przestrzeń do zrozumienia emocji i rozpoznania wzorców myślenia, pomagając rozwijać skuteczne strategie radzenia sobie i żyć zgodnie z własnymi wartościami"
         icon: fas fa-hand-holding-heart
@@ -79,8 +80,8 @@ pl: &DEFAULT_PL
 
   about:
     title: "O nas"
-    text: "nasza historia"
-    body: "Lorem ipsum dolor sit amet, consectetur adipisicing elit. Aut eaque, laboriosam veritatis, quos non quis ad perspiciatis, totam corporis ea, alias ut unde. **Markdown** supported."
+    text: "Nasza misja"
+    body: "**Evemed** to miejsce, w którym pomoc zaczyna się od zrozumienia. Łączymy naukę i doświadczenie z empatią, by pomoc była prawdziwa i skuteczna. Wierzymy, że kluczowe jest nie tylko wsparcie tu i teraz, ale także wyposażenie w narzędzia, które pozwalają radzić sobie samodzielnie. Spotykamy się z człowiekiem tam, gdzie jest — angażując się we wspólną drogę."
     section: about
 
   clients:

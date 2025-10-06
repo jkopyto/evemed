@@ -20,8 +20,6 @@ pl: &DEFAULT_PL
     - title: "Umów się"
     - title: "Kontakt"
       section: contact
-    # - title: "Theme Source"
-    #   url: https://github.com/raviriley/agency-jekyll-theme/
 pl-PL:
   <<: *DEFAULT_PL
 
