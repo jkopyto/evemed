@@ -11,7 +11,7 @@
 # -----------------
 pl: &DEFAULT_PL
   header:
-    title: Witaj w naszym centrum!
+    title: Witaj w naszej poradni!
     text: Jak możemy Ci dziś pomóc?
     button: Więcej
     buttonlink: "#services"
@@ -21,15 +21,24 @@ pl: &DEFAULT_PL
     text: "Lorem ipsum"
     section: services
     list:
-      - title: "E-Commerce"
-        desc: "Lorem ipsum dolor sit amet, consectetur adipisicing elit. Minima maxime quam architecto quo inventore harum ex magni, dicta impedit."
-        icon: fas fa-shopping-cart #find more at https://fontawesome.com/icons
-      - title: "Responsive Design"
-        desc: "Lorem ipsum dolor sit amet, consectetur adipisicing elit. Minima maxime quam architecto quo inventore harum ex magni, dicta impedit."
-        icon: fas fa-laptop
-      - title: "[Markdown](https://en.wikipedia.org/wiki/Markdown)"
-        desc: "Your description here, full **Markdown** support"
-        icon: fab fa-markdown
+      - title: "Diagnoza i opinie"
+        desc: "Umożliwia rozpoznanie źródeł trudności i lepsze zrozumienie indywidualnych potrzeb. Podstawa skutecznego wsparcia i rozwoju"
+        icon: fas fa-clipboard-list # https://fontawesome.com/icons
+      - title: "Terapia i wsparcie dorosłych"
+        desc: "Tworzymy przestrzeń do zrozumienia emocji i rozpoznania wzorców myślenia, pomagając rozwijać skuteczne strategie radzenia sobie i żyć zgodnie z własnymi wartościami"
+        icon: fas fa-hand-holding-heart
+      - title: "Konsultacje psychologiczne"
+        desc: ""
+        icon: far fa-lightbulb
+      - title: "Rozwój dziecka i edukacja"
+        desc: "Wspieramy dzieci w nauce, emocjach i relacjach. Pomagamy im odkrywać mocne strony i rozwijać pewność siebie"
+        icon: fas fa-child
+      - title: "Logopedia i komunikacja"
+        desc: "Wspiera poprawność wymowy i rozwój kompetencji językowych na każdym etapie życia"
+        icon: fas fa-language
+      - title: "Biofeedback"
+        desc: "Trening wspomaga rozwój poznawczy, poprawia uwagę i zdolność do radzenia sobie ze stresem"
+        icon: fas fa-brain
 
   portfolio:
     title: "Portfolio"

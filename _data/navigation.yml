@@ -11,16 +11,13 @@
 # -----------------
 pl: &DEFAULT_PL
   nav:
-    - title: "Usługi"
-      section: services
-    - title: "Portfolio"
-      section: portfolio
     - title: "O nas"
       section: about
-    - title: "Timeline"
-      section: timeline
+    - title: "Usługi"
+      section: services
     - title: "Zespół"
       section: team
+    - title: "Umów się"
     - title: "Kontakt"
       section: contact
     # - title: "Theme Source"
