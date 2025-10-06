@@ -21,25 +21,30 @@ pl: &DEFAULT_PL
     text: "Lorem ipsum"
     section: services
     list:
-      - title: "Diagnoza i opinie"
+      - title: "Diagnoza"
         desc: "Umożliwia rozpoznanie źródeł trudności i lepsze zrozumienie indywidualnych potrzeb. Podstawa skutecznego wsparcia i rozwoju"
         icon: fas fa-clipboard-list # https://fontawesome.com/icons
-        url: "uslugi/diagnoza-i-opinie"
-      - title: "Terapia i wsparcie dorosłych"
+        url: "uslugi/diagnoza"
+      - title: "Wsparcie dorosłych"
         desc: "Tworzymy przestrzeń do zrozumienia emocji i rozpoznania wzorców myślenia, pomagając rozwijać skuteczne strategie radzenia sobie i żyć zgodnie z własnymi wartościami"
         icon: fas fa-hand-holding-heart
-      - title: "Konsultacje psychologiczne"
-        desc: ""
-        icon: far fa-lightbulb
+        url: "uslugi/wsparcie-doroslych"
       - title: "Rozwój dziecka i edukacja"
         desc: "Wspieramy dzieci w nauce, emocjach i relacjach. Pomagamy im odkrywać mocne strony i rozwijać pewność siebie"
         icon: fas fa-child
-      - title: "Logopedia i komunikacja"
-        desc: "Wspiera poprawność wymowy i rozwój kompetencji językowych na każdym etapie życia"
-        icon: fas fa-language
+        url: "uslugi/rozwoj-dziecka-i-edukacja"
+      - title: "Opinia"
+        desc: "Umożliwia rozpoznanie źródeł trudności i lepsze zrozumienie indywidualnych potrzeb. Podstawa skutecznego wsparcia i rozwoju"
+        icon: fas fa-user-graduate
+        url: "uslugi/opinia"
       - title: "Biofeedback"
         desc: "Trening wspomaga rozwój poznawczy, poprawia uwagę i zdolność do radzenia sobie ze stresem"
         icon: fas fa-brain
+        url: uslugi/biofeedback
+      - title: "Psychotraumatolog"
+        desc: "Trening wspomaga rozwój poznawczy, poprawia uwagę i zdolność do radzenia sobie ze stresem"
+        icon: far fa-comments
+        url: uslugi/psychotraumatolog
 
   portfolio:
     title: "Portfolio"
@@ -110,34 +115,16 @@ pl: &DEFAULT_PL
     people:
       - name: "Kay Garland"
         role: "Lead Designer"
+        description: Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat.
         image: assets/img/team/500x500.jpg
-        social:
-          - url: https://twitter.com
-            icon: fab fa-twitter
-          - url: https://facebook.com
-            icon: fab fa-facebook-f
-          - url: https://linkedin.com
-            icon: fab fa-linkedin-in
       - name: "Larry Parker"
         role: "Lead Marketer"
+        description: Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat.
         image: assets/img/team/2.jpg
-        social:
-          - url: https://twitter.com
-            icon: fab fa-twitter
-          - url: https://facebook.com
-            icon: fab fa-facebook-f
-          - url: https://linkedin.com
-            icon: fab fa-linkedin-in
       - name: "Diana Perterson"
         role: "Lead Developer"
+        description: Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat.
         image: assets/img/team/500x500.jpg
-        social:
-          - url: https://twitter.com
-            icon: fab fa-twitter
-          - url: https://facebook.com
-            icon: fab fa-facebook-f
-          - url: https://linkedin.com
-            icon: fab fa-linkedin-in
 
   contact:
     title: "Skontaktuj się z nami"
