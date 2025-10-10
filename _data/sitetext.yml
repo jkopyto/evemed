@@ -18,7 +18,7 @@ pl: &DEFAULT_PL
 
   services:
     title: "Usługi"
-    text: "Lorem ipsum"
+    text: "Rozumiemy, że każda historia i każde wyzwanie są inne. Dlatego nasza oferta została stworzona tak, by dostarczać precyzyjnych odpowiedzi i realnego, skrojonego na miarę wsparcia. Niezależnie od tego, czy szukasz diagnozy dla siebie lub dziecka, potrzebujesz terapii, czy chcesz rozwijać swój potencjał - jesteśmy tu, by Ci pomóc"
     section: services
     list:
       - title: "Diagnoza"
@@ -26,17 +26,17 @@ pl: &DEFAULT_PL
         icon: fas fa-clipboard-list # https://fontawesome.com/icons
         url: "uslugi/diagnoza"
       - title: "Wsparcie dorosłych"
-        desc: "Tworzymy przestrzeń do zrozumienia emocji i rozpoznania wzorców myślenia, pomagając rozwijać skuteczne strategie radzenia sobie i żyć zgodnie z własnymi wartościami"
+        desc: "Wspieramy w zrozumieniu siebie, by rozwijać skuteczne strategie i żyć w zgodzie z własnymi wartościami"
         icon: fas fa-hand-holding-heart
         url: "uslugi/wsparcie-doroslych"
       - title: "Rozwój dziecka i edukacja"
         desc: "Wspieramy dzieci w nauce, emocjach i relacjach. Pomagamy im odkrywać mocne strony i rozwijać pewność siebie"
         icon: fas fa-child
         url: "uslugi/rozwoj-dziecka-i-edukacja"
-      - title: "Opinia"
-        desc: "Umożliwia rozpoznanie źródeł trudności i lepsze zrozumienie indywidualnych potrzeb. Podstawa skutecznego wsparcia i rozwoju"
+      - title: "Opinia Psychologiczno-Pedagogiczna"
+        desc: "Rzetelna diagnoza i oficjalna opinia - klucz do skutecznego wsparcia edukacji Twojego dziecka"
         icon: fas fa-user-graduate
-        url: "uslugi/opinia"
+        url: "uslugi/opinia-psychologiczno-pedagogiczna"
       - title: "Biofeedback"
         desc: "Trening wspomaga rozwój poznawczy, poprawia uwagę i zdolność do radzenia sobie ze stresem"
         icon: fas fa-brain
@@ -109,26 +109,30 @@ pl: &DEFAULT_PL
 
   team:
     title: "Nasz niesamowity zespół"
-    text: "Lorem ipsum dolor sit amet consectetur."
-    subtext: Lorem ipsum dolor sit amet, consectetur adipisicing elit. Aut eaque, laboriosam veritatis, quos non quis ad perspiciatis, totam corporis ea, alias ut unde. **Markdown** supported.
+    text: "Jesteśmy zespołem specjalistek, ale przede wszystkim - pasjonatek ludzkiego umysłu"
+    subtext:  W EVEMED łączymy nasze różnorodne kompetencje, aby stworzyć miejsce, gdzie każdy - od dziecka po dorosłego - znajdzie zrozumienie i skuteczną pomoc. To, co nas łączy, to naukowa rzetelność, ciągła chęć rozwoju i głębokie przekonanie, że w bezpiecznej relacji drzemie siła do zmiany
     section: team
     people:
-      - name: "Kay Garland"
-        role: "Lead Designer"
-        description: Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat.
-        image: assets/img/team/500x500.jpg
-      - name: "Larry Parker"
-        role: "Lead Marketer"
-        description: Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat.
-        image: assets/img/team/2.jpg
-      - name: "Diana Perterson"
-        role: "Lead Developer"
-        description: Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat.
-        image: assets/img/team/500x500.jpg
+      - name: "mgr. Aleksandra Orzoł"
+        role: "Dyrektor, Psycholog, Diagnosta, Psychoterapeutka w trakcie szkolenia"
+        description: Psycholog z pasji do neurobiologii, która wiedzę o działaniu mózgu przekłada na skuteczne wsparcie dla pacjentów. W swojej pracy łączy sprawdzone metody terapii poznawczo-behawioralnej (CBT) i terapii III fali (ACT), dostarczając konkretnych narzędzi do radzenia sobie z trudnymi emocjami i schematami myślowymi.<br/><br/>W EVEMED specjalizuje się w <b>diagnozie</b> (m.in. inteligencji i dysleksji rozwojowej) oraz <b>treningu funkcji poznawczych</b> (metodą Feuersteina), który wzmacnia pamięć, koncentrację i logiczne myślenie. W pracy z dziećmi i młodzieżą wykorzystuje certyfikowane metody, takie jak <b>Kids' Skills</b> oraz <b>Trening Umiejętności Społecznych</b>, by wspierać ich rozwój i budować pewność siebie. Posiada również doświadczenie w pracy z <b>EEG-Biofeedback</b> jako narzędziem do treningu samoregulacji.<br/><br/>Nieustannie rozwija swoje kompetencje, aby zapewnić pomoc na najwyższym poziomie. Obecnie realizuje <b>4-letnie, całościowe szkolenie psychoterapeutyczne w nurcie poznawczo-behawioralnym (CBT)</b>, a swoją pracę poddaje superwizji. Wiedzą z zakresu neuropsychologii i technik radzenia sobie ze stresem dzieli się również jako wykładowczyni na <b>Politechnice Gdańskiej</b>.
+        image: assets/img/team/1.png
+      - name: "mgr. Joanna Chryplewicz"
+        role: "Psycholog, Pedagożka, Diagnosta, Terapeutka EEG-Biofeedback"
+        description: Psycholog i pedagog, której misją jest wspieranie najmłodszych w odkrywaniu wartości ich życia. Wierzy, że każde dziecko zasługuje na szansę, by w pełni rozwinąć skrzydła, a jej rolą jest stworzenie ku temu najlepszych warunków. W gabinecie buduje przyjazną i bezpieczną atmosferę, w której mali pacjenci mogą zatrzymać się, by lepiej zrozumieć swoje trudności, a przede wszystkim - odkryć swoje wewnętrzne zasoby i mocne strony.<br/><br/>W swojej pracy skupia się głównie na pomocy dzieciom doświadczającym nadmiernego stresu, lęku oraz obniżonego nastroju. W podejściu terapeutycznym bliskie są jej założenia psychodynamiczne, pozwalające na głębsze zrozumienie źródeł problemów i osiągnięcie trwałej zmiany w funkcjonowaniu dziecka.<br/><br/>Jest absolwentką dwóch 5-letnich kierunków magisterskich na <b>Uniwersytecie Wrocławskim</b> - psychologii oraz pedagogiki, co daje jej unikalne, podwójne spojrzenie na rozwój dziecka. Ukończyła również studia podyplomowe z zakresu psychologii dziecka. Nieustannie aktualizuje swoją wiedzę, regularnie uczestnicząc w licznych kursach i szkoleniach, aby zapewnić swoim pacjentom pomoc na najwyższym poziomie.
+        image: assets/img/team/2.png
+      - name: "mgr. Magdalena Karasewicz"
+        role: "Logopedka, Pedagożka"
+        description: Logopedka, dla której praca z dziećmi i obserwowanie ich postępów jest źródłem ogromnej satysfakcji. W swojej praktyce poszukuje najefektywniejszych metod nauki, by każde dziecko mogło w pełni rozwinąć swój potencjał komunikacyjny. Wierzy, że odpowiednio dobrane ćwiczenia w przyjaznej, pełnej akceptacji atmosferze to klucz do sukcesu w terapii. Jest absolwentką <b>filologii polskiej ze specjalizacją logopedyczną</b>. Swoją wiedzę i praktyczne umiejętności nieustannie rozwija, uczestnicząc w <b>licznych kursach i szkoleniach z zakresu nowoczesnych metod terapii logopedycznej</b>. Pragnąc jeszcze bardziej wyspecjalizować swoją pomoc, obecnie realizuje studia z <b>logopedii klinicznej</b>, co pozwala jej na pracę z pacjentami o zróżnicowanych i złożonych potrzebach.<br/><br/>Prywatnie jej wieloletnią pasją jest haft krzyżykowy, który uczy precyzji, cierpliwości i uważności - cech niezwykle cennych w pracy terapeuty
+        image: assets/img/team/3.png
+      - name: "mgr. Magdalena Jaworska"
+        role: "Psycholog, Psychotraumatolog, Diagnosta"
+        description: Psycholog i certyfikowany psychotraumatolog, skoncentrowana na wsparciu osób dorosłych. W swojej pracy tworzy atmosferę zaufania i bezpieczeństwa, w której pacjenci mogą swobodnie i w swoim tempie rozmawiać o najtrudniejszych doświadczeniach. Jako specjalistka pracująca w <b>języku polskim i angielskim</b>, oferuje profesjonalną pomoc szerokiemu gronu pacjentów.<br/><br/>Głównym obszarem jej specjalizacji jest <b>praca z traumą</b> i jej konsekwencjami. Ukończyła podyplomowe studia z <b>psychotraumatologii</b>, dzięki czemu udziela profesjonalnego wsparcia osobom zmagającym się z zespołem stresu pourazowego (PTSD), skutkami przemocy, wypadków czy nagłej utraty. Pomaga również pacjentom doświadczającym napadów paniki, zaburzeń osobowości oraz dorosłym w spektrum autyzmu i z ADHD.<br /><br />Jest absolwentką psychologii o specjalności klinicznej na <b>Uniwersytecie Wrocławskim</b>. Doświadczenie zawodowe zdobywała m.in. w <b>Poradni Zdrowia Psychicznego</b> oraz na praktykach w <b>Dolnośląskim Centrum Onkologii</b>, pracując z pacjentami w różnorodnych kryzysach życiowych i zdrowotnych.
+        image: assets/img/team/4.png
 
   contact:
     title: "Skontaktuj się z nami"
-    text: "Lorem ipsum or call 123456789"
+    text: ""
     section: contact
     name: "Imię*"
     name-validation: "Imię jest wymagane"
