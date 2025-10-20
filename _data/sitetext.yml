@@ -14,12 +14,12 @@ pl: &DEFAULT_PL
     title: Witaj w naszej poradni!
     text: Jak możemy Ci dziś pomóc?
     button: Więcej
-    buttonlink: "#services"
+    buttonlink: "#uslugi"
 
   services:
     title: "Usługi"
     text: "Rozumiemy, że każda historia i każde wyzwanie są inne. Dlatego nasza oferta została stworzona tak, by dostarczać precyzyjnych odpowiedzi i realnego, skrojonego na miarę wsparcia. Niezależnie od tego, czy szukasz diagnozy dla siebie lub dziecka, potrzebujesz terapii, czy chcesz rozwijać swój potencjał - jesteśmy tu, by Ci pomóc"
-    section: services
+    section: uslugi
     list:
       - title: "Diagnoza"
         desc: "Umożliwia rozpoznanie źródeł trudności i lepsze zrozumienie indywidualnych potrzeb. Podstawa skutecznego wsparcia i rozwoju"
@@ -87,7 +87,7 @@ pl: &DEFAULT_PL
     title: "O nas"
     text: "Nasza misja"
     body: "**Evemed** to miejsce, w którym pomoc zaczyna się od zrozumienia. Łączymy naukę i doświadczenie z empatią, by pomoc była prawdziwa i skuteczna. Wierzymy, że kluczowe jest nie tylko wsparcie tu i teraz, ale także wyposażenie w narzędzia, które pozwalają radzić sobie samodzielnie. Spotykamy się z człowiekiem tam, gdzie jest — angażując się we wspólną drogę."
-    section: about
+    section: o-nas
 
   clients:
     section: klienci
@@ -111,7 +111,7 @@ pl: &DEFAULT_PL
     title: "Nasz niesamowity zespół"
     text: "Jesteśmy zespołem specjalistek, ale przede wszystkim - pasjonatek ludzkiego umysłu"
     subtext:  W EVEMED łączymy nasze różnorodne kompetencje, aby stworzyć miejsce, gdzie każdy - od dziecka po dorosłego - znajdzie zrozumienie i skuteczną pomoc. To, co nas łączy, to naukowa rzetelność, ciągła chęć rozwoju i głębokie przekonanie, że w bezpiecznej relacji drzemie siła do zmiany
-    section: team
+    section: zespol
     people:
       - name: "mgr Aleksandra Orzoł"
         role: "Dyrektor, Psycholog, Diagnosta, Psychoterapeutka w trakcie szkolenia"

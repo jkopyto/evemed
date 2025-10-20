@@ -12,11 +12,11 @@
 pl: &DEFAULT_PL
   nav:
     - title: "O nas"
-      section: about
+      section: o-nas
     - title: "Usługi"
-      section: services
+      section: uslugi
     - title: "Zespół"
-      section: team
+      section: zespol
     - title: "Umów się"
       url: /umow-sie
     - title: "Kontakt"
