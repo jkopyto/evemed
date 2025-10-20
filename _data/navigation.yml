@@ -18,8 +18,9 @@ pl: &DEFAULT_PL
     - title: "Zespół"
       section: team
     - title: "Umów się"
+      url: /umow-sie
     - title: "Kontakt"
-      section: contact
+      url: /kontakt
 pl-PL:
   <<: *DEFAULT_PL
 
