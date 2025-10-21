@@ -31,6 +31,11 @@
               "Privacy Policy" }}</a
             >
           </li>
+          <li id="cookie-settings-footer" class="list-inline-item" style="color: {{ site.data.style.primary }}; cursor: pointer;">
+            <p>
+              Ustawienia cookies
+            </p>
+          </li>
         </ul>
       </div>
     </div>
@@ -64,12 +69,46 @@
               "Privacy Policy" }}</a
             >
           </li>
+          <li class="list-inline-item">
+            <p>
+              Ustawienia cookies
+            </p>
+          </li>
         </ul>
       </div>
     </div>
     {% endif %}
   </div>
 </footer>
+<script>
+(function() {
+  'use strict';
+  const modal = document.getElementById('cookie-settings-modal');
+  const settingsBtn = document.getElementById('cookie-settings-footer');
+  const analyticsToggle = document.getElementById('cookie-analytics');
+  
+  settingsBtn.addEventListener('click', function() {
+    modal.style.display = 'flex';
+    setTimeout(() => {
+      modal.classList.add('cookie-modal-show');
+    }, 10);
+    
+    const currentConsent = getConsent();
+    if (currentConsent) {
+      analyticsToggle.checked = currentConsent.analytics;
+    }
+  });
+
+  function getConsent() {
+    try {
+      const stored = localStorage.getItem('evemed_cookie_consent');
+      return stored ? JSON.parse(stored) : null;
+    } catch (e) {
+      return null;
+    }
+  }
+})();
+</script>
 {% if page.layout == "page" %}
 <script>
   fixPageShort();

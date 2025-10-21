@@ -6,32 +6,21 @@ title: Polityka Prywatności
 	<h2 class="section-heading text-uppercase">Polityka Prywatności</h2>
 </div>
 
-This Privacy Policy describes how your personal information is collected, used, and shared when you visit {{ site.title }} (the “Site”).
+Administratorem danych osobowych jest OYA Spółka z ograniczoną odpowiedzialnością, z siedzibą ul. Inowrocławska 56, 53-648 Wrocław. Kontakt: <a href="mailto:{{ site.email }}">{{ site.email }}</a>.
 
-**PERSONAL INFORMATION WE COLLECT**
+## 1. Formularz kontaktowy
 
-{% if site.analytics.google %}
+Wysyłając wiadomość przez formularz kontaktowy, przekazujesz nam swoje dane osobowe (np. imię, adres e-mail, treść wiadomości). Dane te przetwarzane są wyłącznie w celu obsługi Twojego zapytania. 
+Podanie danych jest dobrowolne, ale niezbędne do kontaktu. Dane nie są wykorzystywane w innych celach ani przekazywane innym podmiotom, z wyjątkiem dostawcy usługi Formspree (USA), który przetwarza dane zgodnie ze standardowymi klauzulami umownymi (SCC).
 
-Automatically Collected (Google Analytics):
+## 2. Pliki cookies
+Nasza strona wykorzystuje pliki cookies w celu zapewnienia jej prawidłowego działania (cookies techniczne) oraz – za Twoją zgodą – do anonimowej analizy ruchu (Google Analytics).
+- Cookies techniczne - niezbędne do działania strony, nie wymagają zgody.
+- Cookies analityczne (Google Analytics <https://policies.google.com/privacy?hl=pl>) – służą do tworzenia anonimowych statystyk odwiedzin i ruchu na stronie. Adres IP jest anonimizowany przed zapisaniem. Dane są przetwarzane przez Google LLC (USA) na podstawie standardowych klauzul umownych SCC.
 
-When you visit the Site, we automatically receive information about your device from your browser, such as your IP address. As you browse the Site, we also collect information about how you interact with the Site. We refer to this automatically-collected information as “Device Information”.
+## 3. Twoje prawa
+Masz prawo do dostępu do swoich danych, ich poprawienia, usunięcia, ograniczenia przetwarzania oraz cofnięcia zgody. Możesz też w każdej chwili zmienić decyzję dotyczącą cookies, klikając w link „Ustawienia cookies” w stopce strony.
 
-We collect Device Information using cookies. “Cookies” are data files that are placed on your device. For more information about cookies and how to disable them, visit http://www.allaboutcookies.org.
+## 4. Kontakt
+W sprawach związanych z ochroną danych osobowych skontaktuj się z nami pod adresem: <a href="mailto:{{ site.email }}">{{ site.email }}</a>.
 
-We do this using Google Analytics: <https://www.google.com/intl/en/policies/privacy/>.
-
-You can opt-out of Google Analytics here: <https://tools.google.com/dlpage/gaoptout>.
-
-{% else %}
-
-We do not collect any data about you or use any cookies.
-
-{% endif %}
-
-**CHANGES**
-
-We may update this privacy policy from time to time for personal, operational, legal, or regulatory reasons.
-
-**CONTACT US**
-
-For more information about our privacy practices or if you have questions, please contact us by email at <a href="mailto:{{ site.email }}">{{ site.email }}</a>.

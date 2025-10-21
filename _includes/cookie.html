@@ -1,0 +1,216 @@
+<!-- Cookie Consent Banner -->
+<div id="cookie-consent-banner" class="cookie-banner" style="display:none;">
+  <div class="cookie-banner-content">
+    <div class="cookie-banner-icon">
+      <i class="fas fa-cookie-bite"></i>
+    </div>
+    <div class="cookie-banner-text">
+      <h5>Szanujemy Twoją prywatność</h5>
+      <p>
+        Ta strona wykorzystuje pliki cookies w celu zapewnienia prawidłowego działania oraz analizy ruchu (Google Analytics z anonimizacją IP). 
+        Możesz zaakceptować wszystkie pliki cookies lub wybrać tylko niezbędne. 
+        Więcej informacji znajdziesz w naszej 
+        <a href="/polityka-prywatnosci" class="cookie-policy-link">Polityce prywatności</a>.
+      </p>
+    </div>
+    <div class="cookie-banner-actions">
+      <button id="cookie-accept-all" class="cookie-btn cookie-btn-primary">
+        <i class="fas fa-check"></i> Akceptuję wszystkie
+      </button>
+      <button id="cookie-reject-optional" class="cookie-btn cookie-btn-secondary">
+        <i class="fas fa-times"></i> Tylko niezbędne
+      </button>
+      <button id="cookie-settings" class="cookie-btn cookie-btn-outline">
+        <i class="fas fa-cog"></i> Ustawienia
+      </button>
+    </div>
+  </div>
+</div>
+
+<!-- Cookie Settings Modal -->
+<div id="cookie-settings-modal" class="cookie-modal" style="display:none;">
+  <div class="cookie-modal-overlay"></div>
+  <div class="cookie-modal-content">
+    <div class="cookie-modal-header">
+      <h4>Ustawienia prywatności</h4>
+      <button id="cookie-modal-close" class="cookie-modal-close">
+        <i class="fas fa-times"></i>
+      </button>
+    </div>
+    <div class="cookie-modal-body">
+      <div class="cookie-category">
+        <div class="cookie-category-header">
+          <div class="cookie-category-title">
+            <i class="fas fa-shield-alt"></i>
+            <h5>Niezbędne cookies</h5>
+          </div>
+          <label class="cookie-toggle">
+            <input type="checkbox" id="cookie-necessary" checked disabled>
+            <span class="cookie-toggle-slider"></span>
+          </label>
+        </div>
+        <p class="cookie-category-description">
+          Te pliki są wymagane do podstawowego działania strony. Nie można ich wyłączyć.
+        </p>
+      </div>
+      
+      <div class="cookie-category">
+        <div class="cookie-category-header">
+          <div class="cookie-category-title">
+            <i class="fas fa-chart-bar"></i>
+            <h5>Cookies analityczne</h5>
+          </div>
+          <label class="cookie-toggle">
+            <input type="checkbox" id="cookie-analytics">
+            <span class="cookie-toggle-slider"></span>
+          </label>
+        </div>
+        <p class="cookie-category-description">
+          Pomagają nam zrozumieć, jak odwiedzający korzystają ze strony. Wszystkie dane są anonimowe.
+        </p>
+      </div>
+    </div>
+    <div class="cookie-modal-footer">
+      <button id="cookie-save-settings" class="cookie-btn cookie-btn-primary">
+        <i class="fas fa-save"></i> Zapisz ustawienia
+      </button>
+    </div>
+  </div>
+</div>
+
+<script>
+(function() {
+  'use strict';
+  const banner = document.getElementById('cookie-consent-banner');
+  const acceptAllBtn = document.getElementById('cookie-accept-all');
+  const rejectOptionalBtn = document.getElementById('cookie-reject-optional');
+  const settingsBtn = document.getElementById('cookie-settings');
+  const modal = document.getElementById('cookie-settings-modal');
+  const modalClose = document.getElementById('cookie-modal-close');
+  const saveSettingsBtn = document.getElementById('cookie-save-settings');
+  const analyticsToggle = document.getElementById('cookie-analytics');
+  
+  const consent = getConsent();
+  
+  if (consent === null) {
+    setTimeout(() => {
+      banner.style.display = 'block';
+      banner.classList.add('cookie-banner-show');
+    }, 1000);
+  } else {
+    applyConsent(consent);
+  }
+  
+  acceptAllBtn.addEventListener('click', function() {
+    const consent = {
+      necessary: true,
+      analytics: true,
+      timestamp: Date.now()
+    };
+    saveConsent(consent);
+    hideBanner();
+    applyConsent(consent);
+  });
+  
+  rejectOptionalBtn.addEventListener('click', function() {
+    const consent = {
+      necessary: true,
+      analytics: false,
+      timestamp: Date.now()
+    };
+    saveConsent(consent);
+    hideBanner();
+    applyConsent(consent);
+  });
+  
+  settingsBtn.addEventListener('click', function() {
+    modal.style.display = 'flex';
+    setTimeout(() => {
+      modal.classList.add('cookie-modal-show');
+    }, 10);
+    
+    const currentConsent = getConsent();
+    if (currentConsent) {
+      analyticsToggle.checked = currentConsent.analytics;
+    }
+  });
+  
+  modalClose.addEventListener('click', closeModal);
+  modal.querySelector('.cookie-modal-overlay').addEventListener('click', closeModal);
+  
+  saveSettingsBtn.addEventListener('click', function() {
+    const consent = {
+      necessary: true,
+      analytics: analyticsToggle.checked,
+      timestamp: Date.now()
+    };
+    saveConsent(consent);
+    hideBanner();
+    closeModal();
+    applyConsent(consent);
+  });
+  
+  function getConsent() {
+    try {
+      const stored = localStorage.getItem('evemed_cookie_consent');
+      return stored ? JSON.parse(stored) : null;
+    } catch (e) {
+      return null;
+    }
+  }
+  
+  function saveConsent(consent) {
+    try {
+      localStorage.setItem('evemed_cookie_consent', JSON.stringify(consent));
+    } catch (e) {
+      console.error('Nie można zapisać zgody na cookies');
+    }
+  }
+  
+  function hideBanner() {
+    banner.classList.remove('cookie-banner-show');
+    setTimeout(() => {
+      banner.style.display = 'none';
+    }, 300);
+  }
+  
+  function closeModal() {
+    modal.classList.remove('cookie-modal-show');
+    setTimeout(() => {
+      modal.style.display = 'none';
+    }, 300);
+  }
+  
+  function applyConsent(consent) {
+    if (consent.analytics) {
+      enableGoogleAnalytics();
+    } else {
+      window.dataLayer = []
+      window.gtag = null
+      const script = document.getElementById("gtag-evemed")
+      if(script) {
+        script.remove()
+      }
+    }
+  }
+  
+  function enableGoogleAnalytics() {
+    if (window.gtag) return;
+    
+    window.dataLayer = window.dataLayer || [];
+    function gtag(){dataLayer.push(arguments);}
+    window.gtag = gtag;
+    gtag('js', new Date());
+    gtag('config', "{{ site.analytics.google }}", {
+      'anonymize_ip': true,
+      'cookie_flags': 'SameSite=None;Secure'
+    });
+    
+    const script = document.createElement('script');
+    script.id="gtag-evemed"
+    script.src = "https://www.googletagmanager.com/gtag/js?id={{ site.analytics.google }}";
+    script.async = true;
+    document.head.appendChild(script);    
+  }
+})();
+</script>
