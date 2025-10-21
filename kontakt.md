@@ -8,41 +8,41 @@ permalink: /kontakt
 <section class="contact-info-section py-5">
   <div class="container">
     <div class="row">
-      <div class="col-lg-4 col-md-6 mb-4">
+      <a href="{{ site.google.maps.url }}" target="_blank" class="col-lg-4 col-md-6 mb-4">
         <div class="contact-info-card text-center">
           <div class="contact-icon mb-3">
             <i class="fas fa-map-marker-alt fa-3x text-primary"></i>
           </div>
           <h4>Adres</h4>
           <p class="text-muted">
-            ul. Inowrocławska 56<br>
-            53-648 Wrocław<br>
+            {{ site.contact.address1 }}<br>
+            {{ site.contact.address2 }}<br>
             Polska
           </p>
         </div>
-      </div>
-      <div class="col-lg-4 col-md-6 mb-4">
+      </a>
+      <a href="tel:{{ site.contact.phone.val }}" class="col-lg-4 col-md-6 mb-4">
         <div class="contact-info-card text-center">
           <div class="contact-icon mb-3">
             <i class="fas fa-phone fa-3x text-primary"></i>
           </div>
           <h4>Telefon</h4>
           <p class="text-muted">
-            <a href="tel:+48724314798">+48 724 314 798</a><br>
+           {{ site.contact.phone.formatted }}<br>
           </p>
         </div>
-      </div>
-      <div class="col-lg-4 col-md-6 mb-4">
+      </a>
+      <a href="mailto:{{ site.contact.email }}" class="col-lg-4 col-md-6 mb-4">
         <div class="contact-info-card text-center">
           <div class="contact-icon mb-3">
             <i class="fas fa-envelope fa-3x text-primary"></i>
           </div>
           <h4>Email</h4>
           <p class="text-muted">
-            <a href="mailto:poradnia@evemed.pl">poradnia@evemed.pl</a><br>
+            {{ site.contact.email }}<br>
           </p>
         </div>
-      </div>
+      </a>
     </div>
     <div class="row mt-4">
       <div class="col-lg-4 col-md-6 mb-4">
@@ -52,7 +52,7 @@ permalink: /kontakt
           </div>
           <h4>Godziny otwarcia</h4>
           <p class="text-muted">
-            Poniedziałek - Piątek: 9:00 - 17:00<br>
+            Poniedziałek - Piątek: 9:00 - 20:00<br>
             Sobota: Zamknięte<br>
             Niedziela: Zamknięte
           </p>
@@ -90,7 +90,7 @@ permalink: /kontakt
         <div class="map-container">
           <!-- Google Maps Embed - Replace with your actual coordinates -->
           <iframe 
-            src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d1201.4520824165224!2d17.014389054639892!3d51.11752649569002!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x470fc1346c88522d%3A0x1ed38632c4d86749!2sEVEMED%20-%20Niepubliczna%20Poradnia%20Psychologiczno-Pedagogiczna!5e0!3m2!1spl!2spl!4v1760965584305!5m2!1spl!2spl"
+            src="https://www.google.com/maps/embed?pb={{ site.google.maps.pin }}"
             width="100%" 
             height="450" 
             style="border:0; border-radius: 8px;" 

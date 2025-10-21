@@ -9,7 +9,7 @@
 
 .booking-widget-section {
   .widget-container {
-    background: white;
+    background: $white;
     padding: 2rem;
     border-radius: 12px;
     box-shadow: 0 4px 20px rgba(0, 0, 0, 0.08);
@@ -26,13 +26,13 @@
     }
     
     .info-icon i {
-      color: #716085;
+      color: $primary;
     }
     
     h5 {
       font-weight: 600;
       margin-bottom: 1rem;
-      color: #333;
+      color: $black;
     }
     
     p {
@@ -49,8 +49,8 @@
     .step-number {
       width: 50px;
       height: 50px;
-      background: linear-gradient(135deg, #716085 0%, #8b7a9b 100%);
-      color: white;
+      background: linear-gradient(135deg, $primary 0%, darken($primary, 10%) 100%);
+      color: $white;
       border-radius: 50%;
       display: inline-flex;
       align-items: center;
@@ -63,24 +63,24 @@
     h6 {
       font-weight: 600;
       margin-bottom: 0.5rem;
-      color: #333;
+      color: $black;
     }
   }
 }
 
 .important-info {
   .alert-info-card {
-    background: #f8f9fa;
-    border-left: 4px solid #716085;
+    background: $white;
+    border-left: 4px solid $primary;
     padding: 2rem;
     border-radius: 8px;
     
     h4 {
-      color: #333;
+      color: $black;
       font-weight: 600;
       
       i {
-        color: #716085;
+        color: $primary;
         margin-right: 0.5rem;
       }
     }
@@ -91,7 +91,7 @@
       
       li {
         padding: 0.75rem 0;
-        border-bottom: 1px solid #dee2e6;
+        border-bottom: 1px solid $white;
         color: #6c757d;
         
         &:last-child {
@@ -99,7 +99,7 @@
         }
         
         strong {
-          color: #333;
+          color: $black;
         }
       }
     }
@@ -124,7 +124,7 @@
     }
     
     .btn-primary {
-      background: linear-gradient(135deg, #716085 0%, #8b7a9b 100%);
+      background: linear-gradient(135deg, $primary 0%, darken($primary, 10%) 100%);
       border: none;
       
       &:hover {
@@ -134,13 +134,13 @@
     }
     
     .btn-outline-primary {
-      border: 2px solid #716085;
-      color: #716085;
+      border: 2px solid $primary;
+      color: $primary;
       
       &:hover {
-        background: #716085;
-        border-color: #716085;
-        color: white;
+        background: $primary;
+        border-color: $primary;
+        color: $white;
         transform: translateY(-2px);
       }
     }
@@ -149,14 +149,14 @@
 
 .faq-section {
   .faq-card {
-    border: 1px solid #dee2e6;
+    border: 1px solid darken($white, 10%);
     margin-bottom: 1rem;
     border-radius: 8px;
     overflow: hidden;
     
     .card-header {
-      background: #f8f9fa;
-      border-bottom: 1px solid #dee2e6;
+      background: $white;
+      border-bottom: 1px solid darken($white, 10%);
       
       .btn-link {
         width: 100%;
@@ -168,7 +168,7 @@
         display: block;
         
         &:hover {
-          color: #716085;
+          color: $primary;
         }
         
         &::after {

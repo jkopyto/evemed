@@ -12,7 +12,7 @@
 # in the templates via {{ site.myvariable }}.
 
 remote_theme: raviriley/agency-jekyll-theme
-url    : "" # the base hostname & protocol for your site, e.g. http://example.com
+url    : "https://evemed.pl" # the base hostname & protocol for your site, e.g. http://example.com
 baseurl: "" # the subpath of your site, e.g. /blog
 
 title      : EVEMED
@@ -26,10 +26,23 @@ author     : EVEMED
 locale: "pl-PL" # See available languages in _data/sitetext.yml
 
 analytics:
-  google: #Google Analytics tracking code here
+  google:
 
-collections:
-  portfolio:
+contact:
+  address1: ul. Inowrocławska 56 
+  address2: 53-648 Wrocław
+  phone:
+    val: +48724314798
+    formatted: (+48) 724 314 798
+  email: poradnia@evemed.pl
+
+google:
+  maps:
+    pin: "!1m18!1m12!1m3!1d1201.4520824165224!2d17.014389054639892!3d51.11752649569002!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x470fc1346c88522d%3A0x1ed38632c4d86749!2sEVEMED%20-%20Niepubliczna%20Poradnia%20Psychologiczno-Pedagogiczna!5e0!3m2!1spl!2spl!4v1760965584305!5m2!1spl!2spl"
+    url: https://maps.app.goo.gl/1EmGZ31iU6b7TVtAA
+
+# collections:
+#   portfolio:
 
 markdown: kramdown
 

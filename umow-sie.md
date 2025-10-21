@@ -28,12 +28,12 @@ permalink: /umow-sie
             data-twoj-psycholog-therapeutic-center-id="430"
             data-twoj-psycholog-default-service-name="Konsultacja Psychologiczna"
             data-twoj-psycholog-variant="full"
-            data-twoj-psycholog-return-url="https://evemed.pl"
+            data-twoj-psycholog-return-url="https://evemed.pl/potwierdzenie-rezerwacji"
             data-twoj-psycholog-horizontal="true"
-            data-twoj-psycholog-top-background="#716085"
-            data-twoj-psycholog-top-text-color="#fcfcfc"
-            data-twoj-psycholog-button-background="#716085"
-            data-twoj-psycholog-button-text-color="#fcfcfc"
+            data-twoj-psycholog-top-background="{{ site.data.style.primary }}"
+            data-twoj-psycholog-top-text-color="{{ site.data.style.white }}"
+            data-twoj-psycholog-button-background="{{ site.data.style.primary }}"
+            data-twoj-psycholog-button-text-color="{{ site.data.style.white }}"
           ></div>
         </div>
       </div>
@@ -157,11 +157,11 @@ permalink: /umow-sie
           skorzystaj z innych dostępnych form kontaktu.
         </p>
         <div class="contact-options">
-          <a href="/kontakt/" class="btn btn-primary btn-lg mr-3 mb-3">
+          <a href="/kontakt" class="btn btn-primary btn-lg mr-3 mb-3">
             <i class="fas fa-envelope mr-2"></i>Formularz kontaktowy
           </a>
-          <a href="tel:+48724314798" class="btn btn-outline-primary btn-lg mb-3">
-            <i class="fas fa-phone mr-2"></i>Zadzwoń: +48 724 314 798
+          <a href="tel: {{ site.contact.phone.val }}" class="btn btn-outline-primary btn-lg mb-3">
+            <i class="fas fa-phone mr-2"></i>Zadzwoń: {{ site.contact.phone.formatted }}
           </a>
         </div>
         <p class="mt-4 text-muted">

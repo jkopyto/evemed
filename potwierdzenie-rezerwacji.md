@@ -42,7 +42,6 @@ permalink: /potwierdzenie-rezerwacji
               </p>
             </div>
           </div>
-          
           <div class="col-md-4 mb-4">
             <div class="next-step-card">
               <div class="step-icon mb-3">
@@ -55,7 +54,6 @@ permalink: /potwierdzenie-rezerwacji
               </p>
             </div>
           </div>
-          
           <div class="col-md-4 mb-4">
             <div class="next-step-card">
               <div class="step-icon mb-3">
@@ -130,21 +128,21 @@ permalink: /potwierdzenie-rezerwacji
           <div class="contact-methods">
             <div class="row">
               <div class="col-md-4 mb-3">
-                <a href="tel:+48724314798" class="contact-method-link">
+                <a href="tel:{{ site.contact.phone.val }}" class="contact-method-link">
                   <i class="fas fa-phone fa-2x mb-2"></i>
                   <p class="mb-0"><strong>Telefon</strong></p>
-                  <p class="text-muted">+48 724 314 798</p>
+                  <p class="text-muted">{{ site.contact.phone.formatted }}</p>
                 </a>
               </div>
               <div class="col-md-4 mb-3">
-                <a href="mailto:kontakt@evemed.pl" class="contact-method-link">
+                <a href="mailto:{{ site.contact.email }}" class="contact-method-link">
                   <i class="fas fa-envelope fa-2x mb-2"></i>
                   <p class="mb-0"><strong>E-mail</strong></p>
-                  <p class="text-muted">kontakt@evemed.pl</p>
+                  <p class="text-muted">{{ site.contact.email }}</p>
                 </a>
               </div>
               <div class="col-md-4 mb-3">
-                <a href="/kontakt/" class="contact-method-link">
+                <a href="/kontakt" class="contact-method-link">
                   <i class="fas fa-comments fa-2x mb-2"></i>
                   <p class="mb-0"><strong>Formularz</strong></p>
                   <p class="text-muted">Napisz do nas</p>
@@ -199,15 +197,15 @@ permalink: /potwierdzenie-rezerwacji
               <h5><i class="fas fa-map-marker-alt text-primary mr-2"></i>EVEMED</h5>
               <p class="text-muted mb-3">
                 <strong>Adres:</strong><br>
-                ul. Inowrocławska 56<br>
-                53-648 Wrocław
+                {{ site.contact.address1 }}<br>
+                {{ site.contact.address2 }}
               </p>
               <p class="text-muted mb-3">
                 <strong>Dojazd:</strong><br>
                 Tramwaj: 18, 19, 24 (przystanek Michalczyka)<br>
                 Autobus: 102, 103, 122, 127 (przystanek Inowrocławska)
               </p>
-              <a href="https://maps.app.goo.gl/1EmGZ31iU6b7TVtAA" target="_blank" class="btn btn-outline-primary">
+              <a href="{{ site.google.maps.url }}" target="_blank" class="btn btn-outline-primary">
                 <i class="fas fa-directions mr-2"></i>Wyznacz trasę
               </a>
             </div>
@@ -215,7 +213,7 @@ permalink: /potwierdzenie-rezerwacji
           <div class="col-md-6">
             <div class="map-container">
               <iframe 
-                src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d1201.4520824165224!2d17.014389054639892!3d51.11752649569002!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x470fc1346c88522d%3A0x1ed38632c4d86749!2sEVEMED%20-%20Niepubliczna%20Poradnia%20Psychologiczno-Pedagogiczna!5e0!3m2!1spl!2spl!4v1760965584305!5m2!1spl!2spl"
+                src="https://www.google.com/maps/embed?pb={{ site.google.maps.pin }}"
                 width="100%" 
                 height="300" 
                 style="border:0; border-radius: 8px;" 
