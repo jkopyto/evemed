@@ -1,0 +1,187 @@
+<!-- About -->
+{% if site.locale and site.locale != "" and site.locale != nil %}
+<section class="page-section about-section" id="{{ site.data.sitetext[site.locale].about.section | default: "about" }}">
+  <div class="container">
+    <div class="row">
+      <div class="col-lg-8 mx-auto text-center">
+        <h2 class="section-heading text-uppercase">{{ site.data.sitetext[site.locale].about.title | default: "About Us" }}</h2>
+        <div class="section-heading-underline"></div>
+        {% if site.data.sitetext[site.locale].about.text %}
+        <p class="section-subheading">{{ site.data.sitetext[site.locale].about.text }}</p>
+        {% endif %}
+      </div>
+    </div>
+    
+    <div class="row about-content">
+      <div class="col-lg-10 mx-auto">
+        <div class="about-text-wrapper">
+          <div class="about-icon">
+            <i class="fas fa-heart"></i>
+          </div>
+          <div class="about-text">
+            {{ site.data.sitetext[site.locale].about.body | markdownify }}
+          </div>
+        </div>
+      </div>
+    </div>
+    
+    <!-- Stats/Features Grid -->
+    <div class="row about-features mt-5">
+      <div class="col-lg-10 mx-auto">
+        <div class="row">
+          <div class="col-md-3 col-6 mb-4">
+            <div class="about-feature-card">
+              <div class="feature-icon">
+                <i class="fas fa-user-md"></i>
+              </div>
+              <h5>Doświadczenie</h5>
+              <p>Wykwalifikowani specjaliści</p>
+            </div>
+          </div>
+          
+          <div class="col-md-3 col-6 mb-4">
+            <div class="about-feature-card">
+              <div class="feature-icon">
+                <i class="fas fa-hands-helping"></i>
+              </div>
+              <h5>Empatia</h5>
+              <p>Indywidualne podejście</p>
+            </div>
+          </div>
+          
+          <div class="col-md-3 col-6 mb-4">
+            <div class="about-feature-card">
+              <div class="feature-icon">
+                <i class="fas fa-shield-alt"></i>
+              </div>
+              <h5>Bezpieczeństwo</h5>
+              <p>Pełna poufność</p>
+            </div>
+          </div>
+          
+          <div class="col-md-3 col-6 mb-4">
+            <div class="about-feature-card">
+              <div class="feature-icon">
+                <i class="fas fa-lightbulb"></i>
+              </div>
+              <h5>Rozwój</h5>
+              <p>Skuteczne metody</p>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+    
+    <!-- Call to Action -->
+    <div class="row mt-5">
+      <div class="col-lg-8 mx-auto text-center">
+        <div class="about-cta">
+          <h4>Gotowy na zmianę?</h4>
+          <p class="mb-4">Spotkajmy się tam, gdzie jesteś — angażując się we wspólną drogę ku lepszemu samopoczuciu.</p>
+          <div class="about-cta-buttons">
+            <a href="/umow-sie" class="btn btn-primary btn-lg">
+              <i class="fas fa-calendar-check mr-2"></i>Umów wizytę
+            </a>
+            <a href="#zespol" class="btn btn-outline-primary btn-lg js-scroll-trigger">
+              <i class="fas fa-users mr-2"></i>Poznaj nasz zespół
+            </a>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+</section>
+{% else %}
+<section class="page-section about-section" id="{{ site.data.sitetext.about.section | default: "about" }}">
+  <div class="container">
+    <div class="row">
+      <div class="col-lg-8 mx-auto text-center">
+        <h2 class="section-heading text-uppercase">{{ site.data.sitetext.about.title | default: "About Us" }}</h2>
+        <div class="section-heading-underline"></div>
+        {% if site.data.sitetext.about.text %}
+        <p class="section-subheading">{{ site.data.sitetext.about.text }}</p>
+        {% endif %}
+      </div>
+    </div>
+    
+    <div class="row about-content">
+      <div class="col-lg-10 mx-auto">
+        <div class="about-text-wrapper">
+          <div class="about-icon">
+            <i class="fas fa-heart"></i>
+          </div>
+          <div class="about-text">
+            {{ site.data.sitetext.about.body | markdownify }}
+          </div>
+        </div>
+      </div>
+    </div>
+    
+    <!-- Stats/Features Grid -->
+    <div class="row about-features mt-5">
+      <div class="col-lg-10 mx-auto">
+        <div class="row">
+          <div class="col-md-3 col-6 mb-4">
+            <div class="about-feature-card">
+              <div class="feature-icon">
+                <i class="fas fa-user-md"></i>
+              </div>
+              <h5>Doświadczenie</h5>
+              <p>Wykwalifikowani specjaliści</p>
+            </div>
+          </div>
+          
+          <div class="col-md-3 col-6 mb-4">
+            <div class="about-feature-card">
+              <div class="feature-icon">
+                <i class="fas fa-hands-helping"></i>
+              </div>
+              <h5>Empatia</h5>
+              <p>Indywidualne podejście</p>
+            </div>
+          </div>
+          
+          <div class="col-md-3 col-6 mb-4">
+            <div class="about-feature-card">
+              <div class="feature-icon">
+                <i class="fas fa-shield-alt"></i>
+              </div>
+              <h5>Bezpieczeństwo</h5>
+              <p>Pełna poufność</p>
+            </div>
+          </div>
+          
+          <div class="col-md-3 col-6 mb-4">
+            <div class="about-feature-card">
+              <div class="feature-icon">
+                <i class="fas fa-lightbulb"></i>
+              </div>
+              <h5>Rozwój</h5>
+              <p>Skuteczne metody</p>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+    
+    <!-- Call to Action -->
+    <div class="row mt-5">
+      <div class="col-lg-8 mx-auto text-center">
+        <div class="about-cta">
+          <h4>Gotowy na zmianę?</h4>
+          <p class="mb-4">Spotkajmy się tam, gdzie jesteś — angażując się we wspólną drogę ku lepszemu samopoczuciu.</p>
+          <div class="about-cta-buttons">
+            <a href="/umow-sie" class="btn btn-primary btn-lg">
+              <i class="fas fa-calendar-check mr-2"></i>Umów wizytę
+            </a>
+            <a href="#zespol" class="btn btn-outline-primary btn-lg js-scroll-trigger">
+              <i class="fas fa-users mr-2"></i>Poznaj nasz zespół
+            </a>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+</section>
+{% endif %}
+<!-- End About -->
