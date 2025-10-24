@@ -16,7 +16,7 @@ Podanie danych jest dobrowolne, ale niezbędne do kontaktu. Dane nie są wykorzy
 ## 2. Pliki cookies
 Nasza strona wykorzystuje pliki cookies w celu zapewnienia jej prawidłowego działania (cookies techniczne) oraz – za Twoją zgodą – do anonimowej analizy ruchu (Google Analytics).
 - Cookies techniczne - niezbędne do działania strony, nie wymagają zgody.
-- Cookies analityczne (Google Analytics <https://policies.google.com/privacy?hl=pl>) – służą do tworzenia anonimowych statystyk odwiedzin i ruchu na stronie. Adres IP jest anonimizowany przed zapisaniem. Dane są przetwarzane przez Google LLC (USA) na podstawie standardowych klauzul umownych SCC.
+- Cookies analityczne (Google Analytics <https://policies.google.com/privacy?hl=pl>) – służą do tworzenia statystyk odwiedzin i ruchu na stronie. Dane są przetwarzane przez Google LLC (USA) na podstawie standardowych klauzul umownych SCC.
 
 ## 3. Twoje prawa
 Masz prawo do dostępu do swoich danych, ich poprawienia, usunięcia, ograniczenia przetwarzania oraz cofnięcia zgody. Możesz też w każdej chwili zmienić decyzję dotyczącą cookies, klikając w link „Ustawienia cookies” w stopce strony.
