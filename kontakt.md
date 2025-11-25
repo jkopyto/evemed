@@ -7,16 +7,17 @@ permalink: /kontakt
 
 <section class="contact-info-section py-5">
   <div class="container">
-    <div class="row">
+    <div class="row" itemscope itemtype="https://schema.org/MedicalBusiness">
       <a href="{{ site.google.maps.url }}" target="_blank" class="col-lg-4 col-md-6 mb-4">
-        <div class="contact-info-card text-center">
+        <div class="contact-info-card text-center" itemprop="address" itemscope itemtype="https://schema.org/PostalAddress">
           <div class="contact-icon mb-3">
             <i class="fas fa-map-marker-alt fa-3x text-primary"></i>
           </div>
           <h4>Adres</h4>
           <p class="text-muted">
-            {{ site.contact.address1 }}<br>
-            {{ site.contact.address2 }}<br>
+            <span itemprop="streetAddress">{{ site.contact.address1 }}</span><br>
+            <span itemprop="postalCode">{{ site.contact.address2 }}</span><br>
+            <span itemprop="addressLocality">{{ site.contact.address3 }}</span><br>
             Polska
           </p>
         </div>
@@ -27,7 +28,7 @@ permalink: /kontakt
             <i class="fas fa-phone fa-3x text-primary"></i>
           </div>
           <h4>Telefon</h4>
-          <p class="text-muted">
+          <p class="text-muted" itemprop="telephone">
            {{ site.contact.phone.formatted }}<br>
           </p>
         </div>
@@ -38,7 +39,7 @@ permalink: /kontakt
             <i class="fas fa-envelope fa-3x text-primary"></i>
           </div>
           <h4>Email</h4>
-          <p class="text-muted">
+          <p class="text-muted" itemprop="email">
             {{ site.contact.email }}<br>
           </p>
         </div>

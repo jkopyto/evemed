@@ -44,3 +44,16 @@ Nurt ten uczy nas, jak przestać walczyć z trudnymi myślami i emocjami. Zamias
 ### Terapia skoncentrowana na rozwiązaniach (TSR - Solution Focused Brief Therapy) 
 To krótkoterminowe podejście, które – jak sama nazwa wskazuje – koncentruje się na rozwiązaniach, a nie na dogłębnym analizowaniu problemów. Zamiast pytać "dlaczego jest źle?", terapeuta TSR pyta "co małego możemy zrobić, żeby było trochę lepiej?". Szukamy Twoich mocnych stron, zasobów i tych momentów w życiu, kiedy problem nie występował. To terapia bardzo praktyczna, zorientowana na przyszłość i budowanie pożądanych zmian krok po kroku.
 
+<script type="application/ld+json">
+{
+  "@context": "https://schema.org",
+  "@type": "MedicalWebPage",
+  "name": "Wsparcie dorosłych",
+  "description": "Pomoc i terapia osób dorosłych w radzeniu sobie z lękami i zrozumieniem samego siebie",
+  "specialty": "Psychologia dorosłych",
+  "mainContentOfPage": {
+    "@type": "WebPageElement",
+    "cssSelector": ".container"
+  }
+}
+</script>

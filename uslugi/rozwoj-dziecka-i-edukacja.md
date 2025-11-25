@@ -44,3 +44,17 @@ Jeśli masz wrażenie, że Twoje dziecko potrzebuje ciągłych korepetycji, a mi
 
 ### Nauka czytania Metodą Krakowską ®
 To sprawdzona, oparta na badaniach naukowych metoda, która systematycznie i skutecznie wprowadza dziecko w świat liter i słów. Opiera się na pracy z sylabami, co jest zgodne z naturalnym rozwojem percepcji dziecka. Jest niezwykle pomocna dla dzieci z grupy ryzyka dysleksji, z opóźnionym rozwojem mowy czy z ogólnymi trudnościami w nauce. Zajęcia prowadzone w formie atrakcyjnych zabaw językowych sprawiają, że nauka czytania staje się fascynującą przygodą, a nie żmudnym obowiązkiem.
+
+<script type="application/ld+json">
+{
+  "@context": "https://schema.org",
+  "@type": "MedicalWebPage",
+  "name": "Rozwój dziecka i edukacja",
+  "description": "Wsparcie i terapia dzieci i młodzieży z trudnościami emocjonalnymi oraz radzeniu sobie ze stresem",
+  "specialty": "Psychologia dziecka",
+  "mainContentOfPage": {
+    "@type": "WebPageElement",
+    "cssSelector": ".container"
+  }
+}
+</script>

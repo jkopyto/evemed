@@ -46,3 +46,17 @@ Każda diagnoza kończy się pisemną opinią z zaleceniami, która stanowi punk
 
 
 **Pamiętaj**, diagnoza to nie ocena, ale początek nowej, bardziej świadomej drogi **wsparcia** dla Twojego dziecka.
+
+<script type="application/ld+json">
+{
+  "@context": "https://schema.org",
+  "@type": "MedicalWebPage",
+  "name": "Opinia psychologiczno - pedagogiczna Wrocław",
+  "description": "Dokument oraz przewodnik wskazujący zalecenia dla szkoły przeznaczony dla uczniów/dzieci z trudnościami",
+  "specialty": "Psychologia dziecięca",
+  "mainContentOfPage": {
+    "@type": "WebPageElement",
+    "cssSelector": ".container"
+  }
+}
+</script>

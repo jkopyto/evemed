@@ -198,7 +198,8 @@ permalink: /potwierdzenie-rezerwacji
               <p class="text-muted mb-3">
                 <strong>Adres:</strong><br>
                 {{ site.contact.address1 }}<br>
-                {{ site.contact.address2 }}
+                {{ site.contact.address2 }}<br>
+                {{ site.contact.address3 }}<br>
               </p>
               <p class="text-muted mb-3">
                 <strong>Dojazd:</strong><br>

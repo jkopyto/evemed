@@ -19,3 +19,17 @@ layout: page
 - Trudności w nauce i dysleksji
 - Przewlekłego stresu i napięcia
 - Poprawy funkcji poznawczych u dorosłych (pamięć, kreatywność) 
+
+<script type="application/ld+json">
+{
+  "@context": "https://schema.org",
+  "@type": "MedicalWebPage",
+  "name": "Biofeedback Wrocław",
+  "description": "Bezbolesna i nieinwazyjny trening pracy mózgu",
+  "specialty": "Wspomaganie koncentracji",
+  "mainContentOfPage": {
+    "@type": "WebPageElement",
+    "cssSelector": ".container"
+  }
+}
+</script>

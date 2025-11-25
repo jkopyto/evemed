@@ -21,5 +21,16 @@ layout: page
 
 Jeśli skutki tych zdarzeń – takie jak natrętne wspomnienia (flashbacki), koszmary, lęk, unikanie miejsc lub ludzi, poczucie odizolowania – utrudniają Ci codzienne funkcjonowanie, wsparcie psychotraumatologa może być kluczowe na drodze do zdrowienia. Celem terapii jest zintegrowanie traumatycznego doświadczenia, zredukowanie jego objawów i odbudowanie poczucia bezpieczeństwa w świecie.
 
-
-
+<script type="application/ld+json">
+{
+  "@context": "https://schema.org",
+  "@type": "MedicalWebPage",
+  "name": "Psychotraumatolog",
+  "description": "Nie wiesz jak poradzić sobie z lękami? Trudne sytuacje Cię przygnębiają? Psychotraumatolog udzieli Ci wsparcia i pomoże wyjść z trudnej sytuacji",
+  "specialty": "Psychotraumatologia",
+  "mainContentOfPage": {
+    "@type": "WebPageElement",
+    "cssSelector": ".container"
+  }
+}
+</script>
