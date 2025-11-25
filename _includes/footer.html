@@ -3,13 +3,32 @@
   <div class="container">
     {% if site.locale and site.locale != "" and site.locale != nil %}
     <div class="row align-items-center">
-      <div class="col-md-4">
-        <span class="copyright"
-          >Copyright &copy; {{ site.title }} {{ 'now' | date: "%Y" }}</span
-        >
+      <!-- Legal -->
+      <div class="col-md-5">
+        <ul class="list-inline quicklinks">
+          <li class="list-inline-item">
+            <a href="/assets/docs/Polityka_prywatnosci_cookies_25_11_2025.pdf"
+              target="_blank"
+              >{{ site.data.sitetext[site.locale].footer.legal | default:
+              "Privacy Policy" }}</a
+            >
+          </li>
+          <li class="list-inline-item">
+            <a href="/assets/docs/Regulamin_25_11_2025.pdf"
+              target="_blank"
+              >{{ site.data.sitetext[site.locale].footer.rulebook | default:
+              "Rulebook" }}</a
+            >
+          </li>
+          <li id="cookie-settings-footer" class="list-inline-item" style="color: {{ site.data.style.primary }}; cursor: pointer;">
+            <p>
+              Ustawienia cookies
+            </p>
+          </li>
+        </ul>
       </div>
       <!-- Social Media -->
-      <div class="col-md-4">
+      <div class="col-md-3">
         <ul class="list-inline social-buttons">
           {% for link in site.data.sitetext[site.locale].footer.social %}
           <li class="list-inline-item">
@@ -22,21 +41,10 @@
           {% endfor %}
         </ul>
       </div>
-      <!-- Legal -->
       <div class="col-md-4">
-        <ul class="list-inline quicklinks">
-          <li class="list-inline-item">
-            <a href="/polityka-prywatnosci"
-              >{{ site.data.sitetext[site.locale].footer.legal | default:
-              "Privacy Policy" }}</a
-            >
-          </li>
-          <li id="cookie-settings-footer" class="list-inline-item" style="color: {{ site.data.style.primary }}; cursor: pointer;">
-            <p>
-              Ustawienia cookies
-            </p>
-          </li>
-        </ul>
+        <span class="copyright"
+          >Copyright &copy; {{ site.title }} {{ 'now' | date: "%Y" }}</span
+        >
       </div>
     </div>
     {% else %}

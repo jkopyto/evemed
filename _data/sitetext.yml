@@ -118,11 +118,11 @@ pl: &DEFAULT_PL
         description: Psycholog z pasji do neurobiologii, która wiedzę o działaniu mózgu przekłada na skuteczne wsparcie dla pacjentów. W swojej pracy łączy sprawdzone metody terapii poznawczo-behawioralnej (CBT) i terapii III fali (ACT), dostarczając konkretnych narzędzi do radzenia sobie z trudnymi emocjami i schematami myślowymi.<br/><br/>W EVEMED specjalizuje się w <b>diagnozie</b> (m.in. inteligencji i trudności szkolnych) oraz <b>treningu funkcji poznawczych</b> (metodą Feuersteina), który wzmacnia pamięć, koncentrację i logiczne myślenie. W pracy z dziećmi i młodzieżą wykorzystuje certyfikowane metody, takie jak <b>Kids' Skills</b> oraz <b>Trening Umiejętności Społecznych</b>, by wspierać ich rozwój i budować pewność siebie. Posiada również doświadczenie w pracy z <b>EEG-Biofeedback</b> jako narzędziem do treningu samoregulacji.<br/><br/>Nieustannie rozwija swoje kompetencje, aby zapewnić pomoc na najwyższym poziomie. Obecnie realizuje <b>4-letnie, całościowe szkolenie psychoterapeutyczne w nurcie poznawczo-behawioralnym (CBT)</b>, a swoją pracę poddaje superwizji. Wiedzą z zakresu neuropsychologii i technik radzenia sobie ze stresem dzieli się również jako wykładowczyni na <b>Politechnice Gdańskiej</b>.
         image: assets/img/team/1.png
       - name: "mgr Joanna Chryplewicz"
-        role: "Psycholog, Pedagożka, Diagnosta, Terapeutka EEG-Biofeedback"
+        role: "Psycholog, Pedagog, Diagnosta, Terapeutka EEG-Biofeedback"
         description: Psycholog i pedagog, której misją jest wspieranie najmłodszych w odkrywaniu wartości ich życia. Wierzy, że każde dziecko zasługuje na szansę, by w pełni rozwinąć skrzydła, a jej rolą jest stworzenie ku temu najlepszych warunków. W gabinecie buduje przyjazną i bezpieczną atmosferę, w której mali pacjenci mogą zatrzymać się, by lepiej zrozumieć swoje trudności, a przede wszystkim - odkryć swoje wewnętrzne zasoby i mocne strony.<br/><br/>W swojej pracy skupia się głównie na pomocy dzieciom doświadczającym nadmiernego stresu, lęku oraz obniżonego nastroju. W podejściu terapeutycznym bliskie są jej założenia psychodynamiczne, pozwalające na głębsze zrozumienie źródeł problemów i osiągnięcie trwałej zmiany w funkcjonowaniu dziecka.<br/><br/>Jest absolwentką dwóch 5-letnich kierunków magisterskich na <b>Uniwersytecie Wrocławskim</b> - psychologii oraz pedagogiki, co daje jej unikalne, podwójne spojrzenie na rozwój dziecka. Ukończyła również studia podyplomowe z zakresu psychologii dziecka. Nieustannie aktualizuje swoją wiedzę, regularnie uczestnicząc w licznych kursach i szkoleniach, aby zapewnić swoim pacjentom pomoc na najwyższym poziomie.
         image: assets/img/team/2.png
       - name: "mgr Magdalena Karasewicz"
-        role: "Logopedka, Pedagożka"
+        role: "Logopedka, Pedagog"
         description: Logopedka, dla której praca z dziećmi i obserwowanie ich postępów jest źródłem ogromnej satysfakcji. W swojej praktyce poszukuje najefektywniejszych metod nauki, by każde dziecko mogło w pełni rozwinąć swój potencjał komunikacyjny. Wierzy, że odpowiednio dobrane ćwiczenia w przyjaznej, pełnej akceptacji atmosferze to klucz do sukcesu w terapii. Jest absolwentką <b>filologii polskiej ze specjalizacją logopedyczną</b>. Swoją wiedzę i praktyczne umiejętności nieustannie rozwija, uczestnicząc w <b>licznych kursach i szkoleniach z zakresu nowoczesnych metod terapii logopedycznej</b>. Pragnąc jeszcze bardziej wyspecjalizować swoją pomoc, obecnie realizuje studia z <b>logopedii klinicznej</b>, co pozwala jej na pracę z pacjentami o zróżnicowanych i złożonych potrzebach.<br/><br/>Prywatnie jej wieloletnią pasją jest haft krzyżykowy, który uczy precyzji, cierpliwości i uważności - cech niezwykle cennych w pracy terapeuty
         image: assets/img/team/3.png
       - name: "mgr Magdalena Jaworska"
@@ -147,6 +147,7 @@ pl: &DEFAULT_PL
 
   footer:
     legal: "Polityka prywatności"
+    rulebook: "Regulamin"
     social:
       - url: https://www.facebook.com/PoradniaEvemedWroclaw
         icon: "fab fa-facebook-f"
@@ -293,6 +294,7 @@ en: &DEFAULT_EN
 
   footer:
     legal: "Privacy Policy"
+    rulebook: "Rulebook"
     social:
       - url: https://twitter.com
         icon: "fab fa-twitter"
