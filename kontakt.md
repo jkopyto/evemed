@@ -1,6 +1,7 @@
 ---
 layout: page
 title: Kontakt
+description: Kontakt z Evemed we Wrocławiu. Zadzwoń, napisz email lub wypełnij formularz. Poradnia psychologiczno-pedagogiczna dostępna online i stacjonarnie. Odpowiadamy szybko!
 subtitle: Skontaktuj się z nami
 permalink: /kontakt
 ---

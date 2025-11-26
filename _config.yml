@@ -17,7 +17,7 @@ baseurl: "" # the subpath of your site, e.g. /blog
 
 title      : EVEMED
 email      : poradnia@evemed.pl #this is also the email contact forms will go to
-description: EVEMED - Niepubliczna Poradnia Psychologiczno Pedagogiczna | Wrocław
+description: Evemed - Niepubliczna Poradnia Psychologiczno-Pedagogiczna we Wrocławiu i online. Pomoc psychologa i terapeuty dla dzieci, młodzieży, dorosłych. Diagnoza, testy, terapia, wsparcie, ADHD, autyzm, logopeda - sprawdź naszą ofertę!
 author     : Evemed
 # logo:     #optional, defaults to site title
   # path: assets\img\logo.png

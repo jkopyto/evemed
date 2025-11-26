@@ -1,7 +1,7 @@
 <head>
   <meta charset="utf-8">
   <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
-  <meta name="description" content="{{ site.description }}">
+  <meta name="description" content="{% if page.description %}{{ page.description }}{% else %}{{ site.description }}{% endif %}">
   <meta name="author" content="{{ site.author }}">
   <link rel="canonical" href="{{ page.url | replace:'index.html','' | prepend: site.baseurl | prepend: site.url }}">
 
@@ -11,14 +11,13 @@
   <link rel="apple-touch-icon" sizes="180x180" href="/favicon/apple-touch-icon.png" />
   <meta name="apple-mobile-web-app-title" content="Evemed" />
   <link rel="manifest" href="/favicon/site.webmanifest" />
-
-  <meta property="og:title" content="Evemed Niepubliczna Poradnia Psychologiczno Pedagogiczna | Wrocław" />
-  <meta property="og:description" content="EVEMED - Niepubliczna Poradnia Psychologiczno Pedagogiczna | Wrocław" />
+  <meta property="og:title" content='{% if page.title %}{{ page.title | append: " | " | append: site.title }}{% else %}Evemed Niepubliczna Poradnia Psychologiczno Pedagogiczna | Wrocław{% endif %}' />
+  <meta property="og:description" content="{% if page.description %}{{ page.description }}{% else %}{{ site.description }}{% endif %}" />
   <meta property="og:determiner" content="the" />
-  <meta property="og:type" content="zdrowie,poradnia,psycholog,psychoterapia,opinia,diagnoza,test" />
+  <meta property="og:type" content="website" />
   <meta property="og:url" content="https://evemed.pl" />
   <meta property="og:image" content="https://evemed.pl/assets/img/logo.png" />
-  <meta property="og:locale" content="pl-PL" />
+  <meta property="og:locale" content="pl_PL" />
 
   <title>{% if page.title %}{{ page.title | append: " | " | append: site.title }}{% else %}Evemed Niepubliczna Poradnia Psychologiczno Pedagogiczna | Wrocław{% endif %}</title>
 
