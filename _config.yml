@@ -15,7 +15,7 @@ remote_theme: raviriley/agency-jekyll-theme
 url    : "https://evemed.pl" # the base hostname & protocol for your site, e.g. http://example.com
 baseurl: "" # the subpath of your site, e.g. /blog
 
-title      : EVEMED Niepubliczna Poradnia Psychologiczno Pedagogiczna | Wrocław
+title      : EVEMED
 email      : poradnia@evemed.pl #this is also the email contact forms will go to
 description: EVEMED - Niepubliczna Poradnia Psychologiczno Pedagogiczna | Wrocław
 author     : Evemed
